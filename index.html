@@ -1,91 +1,1100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Analyst Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js "></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js "></script>
+  <title>vCard - Personal Portfolio</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Header Section -->
-  <header id="home">
-    <nav>
-      <div class="logo">DataAnalyst</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Aspiring Data Analyst | Turning Data into Insights</p>
-      <a href="#about" class="btn">Learn More</a>
-    </div>
-  </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am an aspiring data analyst with a passion for extracting meaningful insights from data. 
-        I specialize in data visualization, statistical analysis, and storytelling through data.
-      </p>
-    </div>
-  </section>
+  <main>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2>My Skills</h2>
-      <div id="globe-container"></div>
-    </div>
-  </section>
+    <aside class="sidebar" data-sidebar>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Sales Analysis</h3>
-          <p>Analyzed sales data to identify trends and improve revenue.</p>
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Harish Kumar" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Harish Kumar">Harish Kumar</h1>
+
+          <p class="title">Data Analyst</p>
         </div>
-        <div class="project-card">
-          <h3>Customer Segmentation</h3>
-          <p>Used clustering algorithms to segment customers for targeted marketing.</p>
-        </div>
-        <div class="project-card">
-          <h3>Data Visualization Dashboard</h3>
-          <p>Built an interactive dashboard using Tableau for business insights.</p>
-        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
       </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:hkharishkumar44@gmail.com" class="contact-link">hkharishkumar44@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+971567445893" class="contact-link">+971 567445893</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2000-06-16">June 16, 2000</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Dubai, United Arab Emirates</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <div class="main-content">
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a dedicated and curious **Data Analyst** based in Dubai, United Arab Emirates. I specialize in
+            extracting meaningful insights from complex datasets, transforming raw information into actionable strategies.
+          </p>
+
+          <p>
+            My passion lies in telling stories with data, helping businesses make informed decisions, and optimizing processes
+            through rigorous analysis and clear visualizations. I'm adept at using various tools and techniques to clean,
+            analyze, and present data in an impactful way, ensuring your data truly works for you.
+          </p>
+        </section>
+
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-analysis.svg" alt="data analysis icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Cleaning & Preprocessing</h4>
+
+                <p class="service-item-text">
+                  Transforming raw, messy data into clean, structured formats ready for accurate analysis.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-viz.svg" alt="data visualization icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Visualization</h4>
+
+                <p class="service-item-text">
+                  Creating compelling and interactive dashboards and reports to communicate complex insights clearly.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-stats.svg" alt="statistical analysis icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Statistical Analysis</h4>
+
+                <p class="service-item-text">
+                  Applying advanced statistical methods to identify trends, patterns, and make data-driven predictions.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-ml.svg" alt="machine learning icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Predictive Modeling</h4>
+
+                <p class="service-item-text">
+                  Developing robust models to forecast future outcomes and support strategic business planning.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel Lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Harish's data analysis helped us uncover critical insights that significantly improved our marketing strategy.
+                    His attention to detail and clear communication were exceptional.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica Miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    We tasked Harish with analyzing our sales data, and he delivered a comprehensive report with actionable recommendations.
+                    His ability to simplify complex data made a huge difference.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily Evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Harish developed an amazing interactive dashboard for our operations team. It's incredibly user-friendly
+                    and has revolutionized how we monitor performance. Highly recommend!
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry William</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    His expertise in predictive modeling helped us anticipate market trends more accurately. Harish is a true professional
+                    who provides significant value through his analytical skills.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Harish's data analysis helped us uncover critical insights that significantly improved our marketing strategy.
+                  His attention to detail and clear communication were exceptional.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Master of Science in Data Science</h4>
+
+              <span>2022 — 2024</span>
+
+              <p class="timeline-text">
+                Specialized in advanced statistical modeling, machine learning algorithms, and big data technologies.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor of Technology in Computer Science</h4>
+
+              <span>2018 — 2022</span>
+
+              <p class="timeline-text">
+                Focused on programming, algorithms, database management, and foundational computer science principles.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High School Diploma</h4>
+
+              <span>2016 — 2018</span>
+
+              <p class="timeline-text">
+                Emphasis on mathematics, physics, and computer applications, building a strong analytical foundation.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Senior Data Analyst</h4>
+
+              <span>2024 — Present</span>
+
+              <p class="timeline-text">
+                Leading data analysis projects, developing advanced analytical models, and providing strategic insights to stakeholders.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Analyst</h4>
+
+              <span>2022 — 2024</span>
+
+              <p class="timeline-text">
+                Conducted in-depth data analysis, created interactive dashboards, and supported business intelligence initiatives.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Junior Data Analyst</h4>
+
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+                Assisted senior analysts with data collection, cleaning, and basic reporting, gaining foundational experience.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python/R</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">SQL</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Visualization (Tableau/Power BI)</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Excel</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Data Analysis Reports</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Interactive Dashboards</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Predictive Models</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data Analysis Reports</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Interactive Dashboards</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Predictive Models</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="Data Analysis Reports">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Financial Performance Analysis</h3>
+
+                <p class="project-category">Data Analysis Reports</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Predictive Models">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Customer Churn Prediction</h3>
+
+                <p class="project-category">Predictive Models</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Interactive Dashboards">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sales Performance Dashboard</h3>
+
+                <p class="project-category">Interactive Dashboards</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Data Analysis Reports">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Marketing Campaign Effectiveness</h3>
+
+                <p class="project-category">Data Analysis Reports</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Predictive Models">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Supply Chain Optimization Model</h3>
+
+                <p class="project-category">Predictive Models</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Interactive Dashboards">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">HR Analytics Dashboard</h3>
+
+                <p class="project-category">Interactive Dashboards</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Data Analysis Reports">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Healthcare Data Insights</h3>
+
+                <p class="project-category">Data Analysis Reports</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Predictive Models">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sentiment Analysis Project</h3>
+
+                <p class="project-category">Predictive Models</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Data Analysis Reports">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">E-commerce Trend Analysis</h3>
+
+                <p class="project-category">Data Analysis Reports</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Essential Python Libraries for Data Analysts" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Data Analytics</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-05-15">May 15, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Essential Python Libraries for Data Analysts</h3>
+
+                  <p class="blog-text">
+                    Explore the must-have Python libraries like Pandas, NumPy, and Matplotlib for efficient data analysis.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Mastering SQL for Data Extraction" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Data Analytics</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-04-28">Apr 28, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Mastering SQL for Data Extraction</h3>
+
+                  <p class="blog-text">
+                    Learn powerful SQL queries to extract, filter, and aggregate data for your analytical needs.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="The Art of Data Storytelling" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Data Analytics</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-03-10">Mar 10, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The Art of Data Storytelling</h3>
+
+                  <p class="blog-text">
+                    Transform your data insights into compelling narratives that drive business decisions.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="Top 5 Data Visualization Best Practices" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Data Analytics</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-02-20">Feb 20, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Top 5 Data Visualization Best Practices</h3>
+
+                  <p class="blog-text">
+                    Discover key principles for creating clear, effective, and impactful data visualizations.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="Understanding Machine Learning Basics for Analysts" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Data Analytics</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-01-18">Jan 18, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Understanding Machine Learning Basics for Analysts</h3>
+
+                  <p class="blog-text">
+                    A beginner's guide to core machine learning concepts relevant for data analysts.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Data Cleaning Techniques Every Analyst Should Know" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Data Analytics</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-12-05">Dec 05, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Data Cleaning Techniques Every Analyst Should Know</h3>
+
+                  <p class="blog-text">
+                    Essential tips and techniques to ensure your data is accurate and reliable for analysis.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115443.3423719003!2d55.19799863486326!3d25.109062300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e61ce7b7!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1719574511252!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
+  </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Data Analyst Portfolio. All rights reserved.</p>
-  </footer>
 
-  <script src="script.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
